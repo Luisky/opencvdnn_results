@@ -1,0 +1,13 @@
+[
+{
+  "directory": "/home/luisky/cours/M2_LSE/PROJET/opencv_helpmepliz/build",
+  "command": "/usr/bin/g++   -isystem /usr/include/opencv4  -g   -o CMakeFiles/Classification.dir/classification.cpp.o -c /home/luisky/cours/M2_LSE/PROJET/opencv_helpmepliz/classification.cpp",
+  "file": "/home/luisky/cours/M2_LSE/PROJET/opencv_helpmepliz/classification.cpp"
+},
+
+{
+  "directory": "/home/luisky/cours/M2_LSE/PROJET/opencv_helpmepliz/build",
+  "command": "/usr/bin/g++   -isystem /usr/include/opencv4  -g   -o CMakeFiles/Detection.dir/object_detection.cpp.o -c /home/luisky/cours/M2_LSE/PROJET/opencv_helpmepliz/object_detection.cpp",
+  "file": "/home/luisky/cours/M2_LSE/PROJET/opencv_helpmepliz/object_detection.cpp"
+}
+]
