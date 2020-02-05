@@ -1,4 +1,6 @@
 # opencvdnn_results
 
-video taken as input: https://www.youtube.com/watch?v=eq6OeQ4_mgs converted to mp4
+based on the example here :
 
+https://docs.opencv.org/master/da/d9d/tutorial_dnn_yolo.html
+https://github.com/opencv/opencv/blob/master/samples/dnn/object_detection.cpp
