@@ -8,6 +8,7 @@
 
 ./Detection --config=../yolo_files/yolov3.cfg --model=../yolo_files/yolov3.weights --classes=../yolo_files/coco.names --width=416 --height=416 --scale=0.00392 --input=../yolo_files/dog.jpg --rgb
 
+./Detection --config=/home/vm/yolo_files/yolov3.cfg --model=/home/vm/yolo_files/yolov3.weights --classes=/home/vm/yolo_files/coco.names --width=416 --height=416 --scale=0.00392 --input=/home/vm/yolo_files/fall.mp4 --rgb
 
 sync
 echo 3 > /proc/sys/vm/drop_caches
