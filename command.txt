@@ -12,3 +12,13 @@
 
 sync
 echo 3 > /proc/sys/vm/drop_caches
+
+cmake -D CMAKE_BUILD_TYPE=RELEASE \
+-D CMAKE_INSTALL_PREFIX=/usr/local \
+-D OPENCV_GENERATE_PKGCONFIG=ON \
+-D OPENCV_EXTRA_MODULES_PATH=~/PROJET/opencv_contrib/modules ..
+
+cmake -D CMAKE_BUILD_TYPE=RELEASE \
+-D CMAKE_INSTALL_PREFIX=/usr/local \
+-D OPENCV_GENERATE_PKGCONFIG=ON \
+-D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules ..

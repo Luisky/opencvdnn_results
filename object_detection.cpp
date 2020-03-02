@@ -136,9 +136,10 @@ int main(int argc, char **argv)
     }
 
     // Load a model.
-    Net net = readNet(modelPath, configPath, parser.get<String>("framework"));
-    net.setPreferableBackend(parser.get<int>("backend"));
-    net.setPreferableTarget(parser.get<int>("target"));
+    Net net = readNetFromDarknet(configPath, modelPath);
+    //Net net = readNet(modelPath, configPath, parser.get<String>("framework"));
+    net.setPreferableBackend(parser.get<int>("backend")); // Automatically
+    net.setPreferableTarget(parser.get<int>("target"));   // CPU
     std::vector<String> outNames = net.getUnconnectedOutLayersNames();
 
     // Open a video file or an image file or a camera stream.
@@ -152,6 +153,7 @@ int main(int argc, char **argv)
     int frame_count = 1;
     Mat frame;
     std::vector<Mat> outs;
+    std::vector<String> netLayerNames;
 
     //Start of the program
 
@@ -160,8 +162,18 @@ int main(int argc, char **argv)
     while (!frame.empty())
     {
         preprocess(frame, net, Size(inpWidth, inpHeight), scale, mean, swapRB);
-        net.forward(outs, outNames);
+#ifdef NEVER
+        netLayerNames = net.getLayerNames();
 
+        Mat output;
+
+        for (auto layer : netLayerNames) {
+            std::cout << layer << std::endl;
+            output = net.forwardSingleLayer(layer);
+        }
+#else
+        net.forward(outs, outNames);
+#endif
         std::cout << "\nFrame : " << frame_count++ << std::endl;
         postprocess(frame, outs, net);
 

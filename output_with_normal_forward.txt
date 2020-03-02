@@ -1,0 +1,226 @@
+sh: /sys/fs/cgroup/memory/OPENCVDNN/cgroup.procs: No such file or directory
+
+Frame : 1
+person   -> confidence : 0.506005
+person   -> confidence : 0.980832
+
+Frame : 2
+person   -> confidence : 0.983136
+
+Frame : 3
+person   -> confidence : 0.975345
+
+Frame : 4
+person   -> confidence : 0.963443
+
+Frame : 5
+person   -> confidence : 0.971643
+
+Frame : 6
+person   -> confidence : 0.981635
+
+Frame : 7
+person   -> confidence : 0.522756
+person   -> confidence : 0.974028
+
+Frame : 8
+person   -> confidence : 0.598565
+person   -> confidence : 0.960297
+
+Frame : 9
+person   -> confidence : 0.871722
+person   -> confidence : 0.936926
+^C
+./Detection --config=../yolo_files/yolov3-spp.cfg   --width=416 --height=416   33.41s user 1.13s system 644% cpu 5.363 total
+130 luisky@T490 ~/PROJET/opencv_results/build (git)-[master] % ./Detection --config=../yolo_files/yolov3-spp.cfg --model=../yolo_files/yolov3-spp.weights --classes=../yolo_files/coco.names --width=416 --height=416 --scale=0.00392 --input=../yolo_files/fall.mp4 --rgb
+sh: /sys/fs/cgroup/memory/OPENCVDNN/cgroup.procs: No such file or directory
+
+Frame : 1
+person   -> confidence : 0.506005
+person   -> confidence : 0.980832
+
+Frame : 2
+person   -> confidence : 0.983136
+
+Frame : 3
+person   -> confidence : 0.975345
+
+Frame : 4
+person   -> confidence : 0.963443
+
+Frame : 5
+person   -> confidence : 0.971643
+
+Frame : 6
+person   -> confidence : 0.981635
+
+Frame : 7
+person   -> confidence : 0.522756
+person   -> confidence : 0.974028
+
+Frame : 8
+person   -> confidence : 0.598565
+person   -> confidence : 0.960297
+
+Frame : 9
+person   -> confidence : 0.871722
+person   -> confidence : 0.936926
+
+Frame : 10
+person   -> confidence : 0.942889
+person   -> confidence : 0.852601
+
+Frame : 11
+person   -> confidence : 0.975628
+person   -> confidence : 0.674452
+
+Frame : 12
+person   -> confidence : 0.956232
+
+Frame : 13
+person   -> confidence : 0.951947
+
+Frame : 14
+person   -> confidence : 0.873671
+
+Frame : 15
+person   -> confidence : 0.935038
+
+Frame : 16
+person   -> confidence : 0.964175
+
+Frame : 17
+person   -> confidence : 0.986584
+
+Frame : 18
+person   -> confidence : 0.991147
+person   -> confidence : 0.641102
+
+Frame : 19
+person   -> confidence : 0.946992
+person   -> confidence : 0.894916
+
+Frame : 20
+person   -> confidence : 0.97955
+person   -> confidence : 0.820668
+
+Frame : 21
+person   -> confidence : 0.955354
+person   -> confidence : 0.958487
+
+Frame : 22
+person   -> confidence : 0.702596
+person   -> confidence : 0.96663
+
+Frame : 23
+person   -> confidence : 0.974382
+person   -> confidence : 0.921654
+
+Frame : 24
+person   -> confidence : 0.987224
+
+Frame : 25
+person   -> confidence : 0.974366
+
+Frame : 26
+person   -> confidence : 0.955355
+
+Frame : 27
+person   -> confidence : 0.968124
+
+Frame : 28
+person   -> confidence : 0.705952
+
+Frame : 29
+
+Frame : 30
+
+Frame : 31
+
+Frame : 32
+
+Frame : 33
+person   -> confidence : 0.639722
+
+Frame : 34
+
+Frame : 35
+person   -> confidence : 0.677517
+
+Frame : 36
+person   -> confidence : 0.599041
+
+Frame : 37
+
+Frame : 38
+person   -> confidence : 0.776042
+
+Frame : 39
+person   -> confidence : 0.958685
+
+Frame : 40
+person   -> confidence : 0.98185
+
+Frame : 41
+person   -> confidence : 0.983659
+
+Frame : 42
+person   -> confidence : 0.980927
+
+Frame : 43
+person   -> confidence : 0.981109
+
+Frame : 44
+person   -> confidence : 0.961088
+
+Frame : 45
+person   -> confidence : 0.946484
+
+Frame : 46
+person   -> confidence : 0.918021
+
+Frame : 47
+person   -> confidence : 0.975804
+
+Frame : 48
+person   -> confidence : 0.982019
+
+Frame : 49
+person   -> confidence : 0.985771
+
+Frame : 50
+person   -> confidence : 0.961184
+
+Frame : 51
+person   -> confidence : 0.944196
+
+Frame : 52
+person   -> confidence : 0.968857
+
+Frame : 53
+person   -> confidence : 0.915938
+
+Frame : 54
+person   -> confidence : 0.95546
+
+Frame : 55
+person   -> confidence : 0.854178
+
+Frame : 56
+
+Frame : 57
+person   -> confidence : 0.548155
+
+Frame : 58
+
+Frame : 59
+
+Frame : 60
+
+Frame : 61
+
+Frame : 62
+
+Frame : 63
+
+Frame : 64

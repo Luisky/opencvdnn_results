@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 project( Classification )
-find_package( OpenCV REQUIRED )
+find_package( OpenCV REQUIRED PATHS /usr/local/ NO_DEFAULT_PATH )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 add_executable( Detection object_detection.cpp common.hpp )
 target_link_libraries( Detection ${OpenCV_LIBS} pthread)
