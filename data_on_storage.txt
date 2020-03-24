@@ -1,0 +1,15 @@
+speeds of hdd, ssd SATA and NVMe
+
+HDD     :   between 50 and 120 Mo/second
+SSD     :   around 500 Mo/second
+NVMe    :   1Go/second and above
+
+seek time
+
+HDD     :   2ms
+SSD     :   under 0.2ms
+NVMe    :   under 0.1ms
+
+source : https://www.lemondeinformatique.fr/actualites/lire-tout-savoir-sur-le-nvme-74598.html
+
+TOOD: i need better sources

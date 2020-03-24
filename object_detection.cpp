@@ -88,6 +88,9 @@ private:
 
 int main(int argc, char **argv)
 {
+    // remove multithreading
+    cv::setNumThreads(1);
+
     char cmdline[256];
     sprintf(cmdline, "echo %d > /sys/fs/cgroup/memory/OPENCVDNN/cgroup.procs", getpid());
     system(cmdline);
@@ -162,19 +165,9 @@ int main(int argc, char **argv)
     while (!frame.empty())
     {
         preprocess(frame, net, Size(inpWidth, inpHeight), scale, mean, swapRB);
-#ifdef NEVER
-        netLayerNames = net.getLayerNames();
-
-        Mat output;
-
-        for (auto layer : netLayerNames) {
-            std::cout << layer << std::endl;
-            output = net.forwardSingleLayer(layer);
-        }
-#else
-        net.forward(outs, outNames);
-#endif
         std::cout << "\nFrame : " << frame_count++ << std::endl;
+        net.forwardMod(outs, outNames, modelPath);
+        std::cout << "Postprocess : ";
         postprocess(frame, outs, net);
 
         cap >> frame;
